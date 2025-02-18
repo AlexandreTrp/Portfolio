@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandre TURPIN - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+</head>
+<body>
+    <div class="geometric-shapes"></div>
+        
+    
+    <header>
+        <nav id="navbar">
+            <div class="nav-container">
+                <h1>Alexandre TURPIN</h1>
+                <div class="nav-links">
+                    <a href="#aPropos">À propos</a>
+                    <a href="#competences">Compétences</a>
+                    <a href="#projets">Projets</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <button class="mobile-menu-btn" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <!-- Menu mobile -->
+            <div id="mobileMenu">
+                <div class="mobile-links">
+                    <a href="#aPropos">À propos</a>
+                    <a href="#competences">Compétences</a>
+                    <a href="#projets">Projets</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section Hero -->
+    <section id="aPropos">
+        <div class="container">
+            <div class="about-card">
+                <div class="about-content">
+                    <img src="img/tete.jpg" alt="Photo de profil" class="profile-pic"/>
+                    <div>
+                        <h2>Etudiant passionné par le développement Web</h2>
+                        <p>
+                            Bonjour ! Je suis Alexandre, actuellement en 3ème année de licence informatique. <br>
+                            Passionné par le développement web, je suis à la recherche d'un stage pour valider ma licence, et d'une alternance pour préparer la suite de mes études.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences">
+        <div class="container">
+            <h2>Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Front-end</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i>HTML</li>
+                        <li><i class="fas fa-check"></i>CSS </li>
+                        <li><i class="fas fa-check"></i>JavaScript</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Back-end</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i>MariaDB</li>
+                        <li><i class="fas fa-check"></i>PHP / PHP MyAdmin</li>
+                        <li><i class="fas fa-check"></i>SQL / MySQL</li>
+                    </ul>
+                </div>
+                
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Outils</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Git</li>
+                        <li><i class="fas fa-check"></i>Bootstrap</li>
+                        <li><i class="fas fa-check"></i>CodeIgniter</li>
+                        <li><i class="fas fa-check"></i>VS Code</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-hashtag"></i>
+                    </div>
+                    <h3>Autres</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i>C</li>
+                        <li><i class="fas fa-check"></i>Java</li>
+                        <li><i class="fas fa-check"></i>Python</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets">
+        <div class="container">
+            <h2>Mes Projets</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="img/ProjetJava.png" alt="Projet Java" style="height: 60%;"/>
+                    <div class="project-info">
+                        <h3>Projet Java | L3 informatique (2024/2025)</h3>
+                        <p>Application de gestion de Films en Java.<br>Ce projet a été éffectué en groupe.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/TicTacos/JavaProject2024" 
+                               class="btn btn-secondary">
+                                <i class="fa-brands fa-square-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="img/ProjetWeb.png" alt="Projet Web" style="height: 60%;"/>
+                    <div class="project-info">
+                        <h3>Projet Web | L3 informatique (2024/2025)</h3>
+                        <p>Application web "Olympix" de gestion de concours en ligne<br>Projet réalisé seul </p>
+                        <div class="project-links">
+                            <a href="https://github.com/TicTacos/ProjetWeb2024" 
+                               class="btn btn-secondary">
+                                <i class="fa-brands fa-square-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-card">
+                <div class="contact-links">
+                    <a href="mailto:aturpin2004@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                        <span>aturpin2004@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alexandre-turpin-69a901294/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/TicTacos" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
